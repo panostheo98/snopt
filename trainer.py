@@ -72,6 +72,7 @@ class TrainerBase(metaclass=abc.ABCMeta):
 
         return loss
 
+    
     def evaluate(self, opt, ep, train_it, compute_accu=True):
         self.network.eval()
         loss_eval = 0.
